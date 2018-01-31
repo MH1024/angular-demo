@@ -2,7 +2,7 @@
   <h2>{{ selectedHero.name | uppercase }}</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
 </mat-card>
-
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" 
   (click)="onSelect(hero)" 
