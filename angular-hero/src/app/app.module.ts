@@ -11,7 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroService } from './hero.service';
+import { HeroService } from './service/hero.service';
+import { MessageService } from './service/message.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { HeroService } from './hero.service';
     MatIconModule,
     MatInputModule
   ],
-  providers: [HeroService],
+  providers: [HeroService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
