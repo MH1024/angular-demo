@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroService } from './service/hero.service';
 import { MessageService } from './service/message.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MessageService } from './service/message.service';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule
   ],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent]
